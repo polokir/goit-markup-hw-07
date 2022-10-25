@@ -10,7 +10,7 @@
     --second-font-color: #FFFFFF;
     --contact-color: #757575;
     --hero-bg: #2F303A;
-    --our-team-color:#F5F4FA;
+    --team-color:#F5F4FA;
     --contact-footer:#FFFFFF99;
     --portfolio-line-color:#ECECEC;
     --footer-links: rgba(255, 255, 255, 0.1);
@@ -70,16 +70,16 @@ button{
     padding: 0 15px;
 }
  
-.header-menu{ 
+.menu{ 
     display: flex;
     padding: 0;
 } 
  
-.header-menu li:not(:last-child){ 
+.menu__item:not(:last-child){ 
     margin-right: 50px;
 } 
  
-.header-link{ 
+.menu__link{ 
     font-family: 'Roboto';
     display: block;
     color: var(--main-color);
@@ -90,12 +90,12 @@ button{
     transition: color var(--transition-duration) var(--animation-timing-function);
 
 }
-.current{
+.menu--current{
     color:var(--hover-color);
     position: relative;
 } 
  
-.current::after{
+.menu--current::after{
     content:"";
     position: absolute;
     display: block;
@@ -107,13 +107,13 @@ button{
 }
 
 
-.header-link:hover,
-.header-link:focus{
+.menu__link:hover,
+.menu__link:focus{
     color:var(--hover-color);   
 }
 
 
-.header-logo{ 
+.logo{ 
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -124,19 +124,19 @@ button{
 } 
 
  
-.header-contact-info{ 
+.contact{ 
     text-decoration: none; 
     display: flex;
     margin-left: auto;
 } 
  
-.header-contact-info li:first-child{ 
+.contact__item:first-child{ 
     text-decoration: none; 
-    margin-right: 50px;
+    margin-right: 30px;
     
 } 
  
-.contact-link{ 
+.contact__link{ 
     font-family: 'Roboto', sans-serif; 
     text-decoration: none; 
     color: var(--contact-color);
@@ -150,23 +150,24 @@ button{
 
 } 
 
-.list-icon{
-    width: 16px;
-    height: 12px;
+.contact__icon{
     margin-right: 10px;
     fill: currentColor;
 }
 
-.phone{
+.icon--list{
+    width: 16px;
+    height: 12px;
+}
+.icon--phone{
     width: 10px;
     height: 16px;
 }
 
-
-.contact-link:hover{
+.contact__link:hover{
     color: var(--hover-color);
 }
-.contact-link:focus{
+.contact__link:focus{
     color: var(--hover-color);
 }
 
@@ -174,7 +175,7 @@ button{
 
 
 
-.header-hero{ 
+.hero{ 
     background-color: var(--hero-bg);  
     padding: 200px 0;
     text-align: center;
@@ -207,7 +208,7 @@ button{
 }
 
  
-.hero-text{ 
+.hero__text{ 
     color:var(--second-font-color); 
     font-size:44px; 
     text-transform: uppercase;
@@ -219,7 +220,7 @@ button{
     margin-bottom: 30px;
 } 
  
-.header-button{ 
+.hero__button{ 
     background: var(--hover-color); 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
@@ -236,18 +237,18 @@ button{
 }
 
 
-.about-list-main{
+.about__list{
     display: flex;
 }
-.about-list{
+.about__item{
     width: 270px;
 }
 
-.about-list:not(:last-child){
+.about__item:not(:last-child){
     margin-right: 30px;
 }
 
-.about-title{
+.about__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -255,28 +256,28 @@ button{
     margin-bottom: 10px;
 }
 
-.icon-about-container{
+.about__box{
     width: 270px;
     height: 120px;
-    background-color: var(--our-team-color);
+    background-color: var(--team-color);
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.about-icon{
+.about__icon{
     width: 70px;
     height: 70px;
 }
 
-.about-text{
+.about__text{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
     line-height: 1.7;
     color: var(--contact-color);
 }
 
-.gonna-do{
+.gonna{
     padding-top: 0;
 }
 
@@ -294,12 +295,12 @@ button{
     opacity: 0;
     pointer-events: none;
 }
-.item-overlay{
+.item__overlay{
     position: relative;
     overflow: hidden;
 }
 
-.overlay-container{
+.overlay__container{
     position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
     width: 100%;
@@ -310,7 +311,7 @@ button{
     transform: translateY(100%);
     transition: transform  var(--transition-duration) var(--animation-timing-function);
 }
-.overlay-tex{
+.overlay__text{
     color: var(--second-font-color);
     font-size: 18px;
     line-height: 1.5;
@@ -318,8 +319,8 @@ button{
     padding: 63px 24px;
 }
 
-.goods-link:hover .item-overlay .overlay-container,
-.goods-link:focus .item-overlay .overlay-container{
+.goods__link:hover .item__overlay .overlay__container,
+.goods__link:focus .item__overlay .overlay__container{
     transform: translateY(0);
 }
 
@@ -335,7 +336,7 @@ button{
     border-radius: 4px;
 }
 
-.modal-icon-close{
+.close__icon{
     width: 17px;
     height: 17px;
     fill: currentColor;
@@ -376,14 +377,14 @@ button{
     border-color var(--transition-duration) var(--animation-timing-function);
 
   }
-  .check-icon{
+  .check__icon{
     width: 13px;
     height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .modal-icon{
+  .field__icon{
     position: absolute;
     width: 18px;
     height: 18px;
@@ -392,8 +393,8 @@ button{
     fill: var(--main-color);
     transition: fill var(--transition-duration) var(--animation-timing-function);
   }
-  .modal-input:hover + .modal-icon,
-  .modal-input:focus + .modal-icon{         
+  .field__input:hover + .field__icon,
+  .field__input:focus + .field__icon{         
     fill: var(--hover-color);
   }
   /* Checked */
@@ -408,7 +409,7 @@ button{
   .check__input:focus + .check__box {
     border-color: var(--hover-color);
   }
-  .label-check{
+  .check__label{
     margin-left: 8px;
     cursor: pointer;
     color: var(--contact-color);
@@ -431,7 +432,7 @@ button{
     background-color: inherit;
 }
 
-.gonna-do-title{
+.gonna__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -439,14 +440,14 @@ button{
     text-align: center;
     margin-bottom: 50px;
 }
-.gonna-do-photos{
+.gonna__list{
     display: flex;
 }
 
-.gonna-do-photo:not(:last-child){
+.gonna__item:not(:last-child){
     margin-right: 30px;
 }
-.gonna-do-photo{
+.gonna__item{
     position: relative;
 }
 
@@ -465,27 +466,27 @@ button{
     height: 70px; 
 }
 
-.team-card{
+.team__item{
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--second-font-color);
 }
 
-.team-cards
+.team__list
 {   
     display: flex;    
 }
 
-.team-card:not(:last-child){
+.team__item:not(:last-child){
     margin-right: 30px;
 }
 
-.our-team{
-    background-color: var(--our-team-color);
+.team{
+    background-color: var(--team-color);
 }
 
-.our-team-desc{
+.team__desc{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -493,12 +494,12 @@ button{
     margin-bottom: 50px;
 }
 
-.team-card img{
+.team__item img{
     width: 279px;
     height: 260px;
 }
 
-.team-name{
+.team__name{
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
@@ -506,7 +507,7 @@ button{
     margin-bottom: 10px;
 }
 
-.position{
+.team__position{
     text-align: center;
     color: var(--contact-color);
     font-size: 16px;
@@ -515,14 +516,14 @@ button{
     
 }
 
-.team-social-list{
+.social__list{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
 }
 
-.social-link{
+.social__link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -535,12 +536,12 @@ button{
     background-color var(--transition-duration) var(--animation-timing-function);
 
 }
-.team-social-icon{
+.social__icon{
     fill:currentColor; 
 }
 
-.social-link:hover,
-.social-link:focus
+.social__link:hover,
+.social__link:focus
 {
    background-color: var(--hover-color); 
    color:var(--second-font-color)
@@ -556,23 +557,23 @@ address{
     margin-top: 20px;
 }
 
-.client-list{
+.client__list{
     display: flex;
     gap: 30px;
     justify-content: center;
 }
-.client-icon{
+.client__icon{
     width: 106px;
     height: 60px;
     fill:currentColor ;
 }
-.client-link:hover,
-.client-link:focus{
+.client__link:hover,
+.client__link:focus{
     border: 1px solid var(--hover-color);
     color: var(--hover-color);
 }
 
-.client-link{
+.client__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -585,7 +586,7 @@ address{
     border-color var(--transition-duration) var(--animation-timing-function);
     
 }
-.client-title{
+.client__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -604,7 +605,7 @@ address{
     text-decoration: none;
 }
 
-.adress-item{
+.first{
     color: var(--second-font-color);
     font-size: 14px;
     line-height: 1.7;
@@ -612,20 +613,20 @@ address{
     letter-spacing: 0.03em;
     font-style: normal;
 }
-.footer-curent{
+.footer__curent{
     transition: color var(--transition-duration) var(--animation-timing-function)
 }
-.footer-curent:hover{
+.footer__curent:hover{
 color: var(--hover-color);
 }
 
-.footer-curent:focus{
+.footer__curent:focus{
 color: var(--hover-color);
 }
 
-.contact-item{
+.adress__link{
     font-size: 14px;
-    color: var(--contact-footer);
+    color: rgba(255, 255, 255, 0.6);;
     text-decoration: none;
     letter-spacing: 0.03em;
     line-height: 1.7;
@@ -640,7 +641,7 @@ color: var(--hover-color);
 .logo-i{
     margin-bottom: 20px;
 }
-.contact-item-list:not(:last-child){
+.adress__item:not(:last-child){
     margin-bottom: 9px;
 }
 
@@ -650,7 +651,7 @@ color: var(--hover-color);
     margin-bottom: 50px;
 }
 
-.btn-item:not(:last-child){
+.btn__item:not(:last-child){
     margin-right: 8px;
 }
 
@@ -662,7 +663,7 @@ color: var(--hover-color);
     line-height: 1.6;
     border: 0;
     cursor: pointer;
-    background-color: var(--our-team-color);
+    background-color: var(--team-color);
     letter-spacing: 0.03em;
     color: var(--main-color);
     min-width: 73px;
@@ -687,37 +688,37 @@ color: var(--hover-color);
 
 }
 
-.goods-list{
+.goods__list{
     display: flex;
     flex-wrap: wrap;
     gap:30px;
 
 }
-.goods-link{
+.goods__link{
     display: block;
     transition: box-shadow var(--transition-duration) var(--animation-timing-function);
 
 }
-.goods-link:hover,
-.goods-link:focus{
+.goods__link:hover,
+.goods__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.team-text-container{
+.team__text{
     padding: 30px 0;
 }
 
 
-.goods-list-item{
+.goods__item{
    width: 370px;
 }
 
-.goods-text-container{
+.goods__box{
     padding: 20px 24px;
     border:1px solid #EEEE ;
 }
 
-.good-title{ 
+.good__title{ 
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -727,13 +728,13 @@ color: var(--hover-color);
    
 }
 
-.good-text{
+.good__text{
     font-size: 16px;
     line-height: 1.875;
     color: var(--contact-color);
 }
 
-.goods-picture{
+.goods__picture{
     width: 370px;
 }
 
@@ -749,7 +750,7 @@ color: var(--hover-color);
     display: flex;
     align-items: baseline;
 }
-.footer-right-title{
+.footer__right-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -757,20 +758,20 @@ color: var(--hover-color);
     color: var(--second-font-color);
 
 }
-.footer-right{
+.footer__right{
     margin-left:70px;
 }
-.footer-links{
+.footer__list{
     display: flex;
     margin-top: 20px;
     gap: 10px;
 }
-.footer-icon{
+.footer__icon{
     width: 20px;
     height: 20px;
     fill:var(--second-font-color)
 }
-.footer-link{
+.footer__link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -781,8 +782,8 @@ color: var(--hover-color);
     transition: background-color var(--transition-duration) var(--animation-timing-function);
 }
 
-.footer-link:hover,
-.footer-link:focus{
+.footer__link:hover,
+.footer__link:focus{
     background-color: var(--hover-color);
 }
 
@@ -799,10 +800,10 @@ color: var(--hover-color);
     overflow: hidden;
 }
 
-.form-footer-container{
+.form__footer{
     margin-left: auto;    
 }
-.form-footer-description{
+.form__description{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -813,13 +814,13 @@ color: var(--hover-color);
     margin-bottom: 20px;
 }
 
-.footer-form{
+.footer__form{
     display: flex;
     width: 570px;
     
 }
 
-.footer-form input[type='email']{
+.footer__form input[type='email']{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -856,7 +857,7 @@ color: var(--hover-color);
     justify-content: center;
     align-items: center;
 }
-.send-icon{
+.subscribe__icon{
     margin-left: 10px;
     width: 24px;
     height: 24px;
@@ -875,16 +876,16 @@ color: var(--hover-color);
     margin-bottom: 12px;
 }
 
-.modal-field{
+.field{
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.modal-field:not(:last-child){
+.field:not(:last-child){
     margin-bottom: 10px;
 }
 
-.modal-input{
+.field__input{
     padding: 11px 12px;
     padding-left: 42px;
     height: 40px;
@@ -899,11 +900,11 @@ color: var(--hover-color);
 textarea{
     resize: none;
 }
-.modal-input:hover,
-.modal-input:focus{
+.field__input:hover,
+.field__input:focus{
     border-color: var(--hover-color);
 }
-.modal-input-coment{
+.field__input-coment{
     padding: 12px 16px;
     height: 120px;
     cursor: pointer;
@@ -913,14 +914,14 @@ textarea{
     outline: var(--hover-color);
     transition: border-color var(--transition-duration) var(--animation-timing-function);
 }
-.modal-input-coment:hover,
-.modal-input-coment:focus{
+.field__input-coment:hover,
+.field__input-coment:focus{
     border-color: var(--hover-color);
 }
-.modal-link{
+.check__ink{
     color: var(--hover-color);
 }
-.field-label{
+.field__label{
     
     margin-bottom: 4px;
     font-size: 12px;

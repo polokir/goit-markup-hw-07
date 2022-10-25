@@ -19,25 +19,28 @@
   </head>
   
   <body>
-    <header class="portfolio">
+    <header class="page-header portfolio">
       <div class="header container">
-          <a class="header-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
-          <nav>
-              <ul class="header-menu list">
-                  <li><a class="header-link link " href="./index.html">Студія</a></li>
-                  <li><a class="header-link link current" href="./portfolio.html">Портфоліо</a></li>
-                  <li><a class="header-link link" href="">Контакти</a></li>
+          <a class="logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
+          <nav class="navigation">
+              <ul class="menu list">
+                  <li class="menu__item"><a class="menu__link link" href="./index.html">Студія</a></li>
+                  <li class="menu__item"><a class="menu__link menu--current link link" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="menu__item"><a class="menu__link link" href="">Контакти</a></li>
               </ul>
           </nav>
-          <ul class="header-contact-info list">               
-              <li><a class="contact-link" href="mailto:info@devstudio.com">
-                  <svg class="list-icon">
-                      <use href="./img/symbol-defs.svg#icon-list"></use>
-                  </svg>
-                  info@devstudio.com</a>
+          <ul class="contact list">               
+              <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@devstudio.com">
+                      <svg class="contact__icon icon--list">
+                          <use href="./img/symbol-defs.svg#icon-list"></use>
+                      </svg>
+                      info@devstudio.com
+                  </a>
               </li>
-              <li><a class="contact-link" href="tel:+380961111111"> 
-                  <svg class="list-icon phone">
+              <li class="contact__item">
+                  <a class="contact__link" href="tel:+380961111111"> 
+                  <svg class="contact__icon icon--phone">
                       <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                   </svg>                  
                   +38 096 111 11 11
@@ -54,132 +57,132 @@
         <div class="container">
           
           <ul class="button-panel list">
-            <li class="btn-item"><button class="btn" type="button">Усі</button></li>
-            <li class="btn-item"><button class="btn" type="button">Веб-сайти</button></li>
-            <li class="btn-item"><button class="btn" type="button">Додатки</button></li>
-            <li class="btn-item"><button class="btn" type="button">Дизайн</button></li>
-            <li class="btn-item"><button class="btn" type="button">Маркетинг</button></li>
+            <li class="btn__item"><button class="btn" type="button">Усі</button></li>
+            <li class="btn__item"><button class="btn" type="button">Веб-сайти</button></li>
+            <li class="btn__item"><button class="btn" type="button">Додатки</button></li>
+            <li class="btn__item"><button class="btn" type="button">Дизайн</button></li>
+            <li class="btn__item"><button class="btn" type="button">Маркетинг</button></li>
           </ul>
           
-          <ul class="goods-list list">
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgheadphones.jpg" alt="Маркетинг" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+          <ul class="goods__list list">
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgheadphones.jpg" alt="Маркетинг" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
                   </div>
-              <div class="goods-text-container">
-              <h2 class="good-title">Проєкт Prime</h2>
-              <p class="good-text">Маркетинг</p>
+              <div class="goods__box">
+              <h2 class="good__title">Проєкт Prime</h2>
+              <p class="good__text">Маркетинг</p>
               </div>
               </a>
             </li>
               
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgboxes.jpg" alt="Додаток" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgboxes.jpg" alt="Додаток" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
                 </div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Проєкт Boxes</h2>
-              <p class="good-text">Додаток</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Проєкт Boxes</h2>
+              <p class="good__text">Додаток</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imginsp.jpg" alt="Веб-сай" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imginsp.jpg" alt="Веб-сай" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
                 </div>
-              <div class="goods-text-container">
-              <h2 class="good-title">Inspiration has no Borders</h2>
-              <p class="good-text">Веб-сайт</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Inspiration has no Borders</h2>
+              <p class="good__text">Веб-сайт</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgtec-crya.jpg" alt="Технокряк" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgtec-crya.jpg" alt="Технокряк" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Технокряк</h2>
-              <p class="good-text">Веб-сайт</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Технокряк</h2>
+              <p class="good__text">Веб-сайт</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgposter.jpg" alt="Постер" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgposter.jpg" alt="Постер" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Постер New Orlean vs Golden Star</h2>
-              <p class="good-text">Дизайн</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Постер New Orlean vs Golden Star</h2>
+              <p class="good__text">Дизайн</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgsea.jpg" alt="Ресторан" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgsea.jpg" alt="Ресторан" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Ресторан Seafood</h2>
-              <p class="good-text">Додаток</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Ресторан Seafood</h2>
+              <p class="good__text">Додаток</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgbuisnes.jpg" alt="Додаток" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgbuisnes.jpg" alt="Додаток" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Growing Business</h2>
-              <p class="good-text">Додаток</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Growing Business</h2>
+              <p class="good__text">Додаток</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imglab.jpg" alt="Маркетинг" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imglab.jpg" alt="Маркетинг" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Проєкт LAB</h2>
-              <p class="good-text">Маркетинг</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Проєкт LAB</h2>
+              <p class="good__text">Маркетинг</p></div></a>
             </li>
 
-            <li class="goods-list-item">
-              <a href="" class="goods-link link">
-                <div class="item-overlay">
-              <img src="img/imgle.jpg" alt="" class="goods-picture" />
-              <div class="overlay-container">
-                <p class="overlay-tex">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="goods__item">
+              <a href="" class="goods__link link">
+                <div class="item__overlay">
+              <img src="img/imgle.jpg" alt="" class="goods__picture" />
+              <div class="overlay__container">
+                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div></div>
 
-              <div class="goods-text-container">
-              <h2 class="good-title">Видання Limited Edition</h2>
-              <p class="good-text">Дизайн</p></div></a>
+              <div class="goods__box">
+              <h2 class="good__title">Видання Limited Edition</h2>
+              <p class="good__text">Дизайн</p></div></a>
             </li>
           </ul>
         </div>
@@ -188,72 +191,72 @@
 
     <footer>
       <div class="container footer">
-          <div class="footer-left">
+          <div class="footer__left">
           <a class="footer-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
           
           <address>
-          <ul class="contacts list">
-              <li class="contact-item-list">
+          <ul class="adress__list list">
+              <li class="adress__item">
                <a
               href="https://goo.gl/maps/MCXRP4PtPJVevDJ69"
               rel="n"
-              class="adress-item footer-curent"
+              class="first footer__curent"
               >м. Київ, пр-т Лесі Українки, 26</a
                >
            </li>
-          <li class="contact-item-list">
-            <a class="contact-item footer-curent" href="mailto:info@devstudio.com"
+          <li class="adress__item">
+            <a class="adress__link footer__curent" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-item-list">
-            <a class="contact-item footer-curent" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="adress__item">
+            <a class="adress__link footer__curent" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
          </address>
           </div>
      
-              <div class="footer-right">
-                  <h3 class="footer-right-title">приєднуйтесь</h3>
-                  <ul class="footer-links list">
-                      <li class="footer-item">
-                          <a href="" class="footer-link">
-                              <svg class="footer-icon">
+              <div class="footer__right">
+                  <h3 class="footer__right-title">приєднуйтесь</h3>
+                  <ul class="footer__list list">
+                      <li class="footer__item">
+                          <a href="" class="footer__link">
+                              <svg class="footer__icon">
                                   <use href="./img/symbol-defs.svg#icon-instagram"></use>
                               </svg>
                           </a>
                       </li>
-                      <li class="footer-item">
-                          <a href="" class="footer-link">
-                              <svg class="footer-icon">
+                      <li class="footer__item">
+                          <a href="" class="footer__link">
+                              <svg class="footer__icon">
                                   <use href="./img/symbol-defs.svg#icon-twitter"></use>
                               </svg>
                           </a>
                       </li>
-                      <li class="footer-item">
-                          <a href="" class="footer-link">
-                              <svg class="footer-icon">
+                      <li class="footer__item">
+                          <a href="" class="footer__link">
+                              <svg class="footer__icon">
                                   <use href="./img/symbol-defs.svg#icon-facebook"></use>
                               </svg>
                           </a>
                       </li>
-                      <li class="footer-item">
-                          <a href="" class="footer-link">
-                              <svg class="footer-icon">
+                      <li class="footer__item">
+                          <a href="" class="footer__link">
+                              <svg class="footer__icon">
                                   <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                               </svg>
                           </a>
                       </li>
                   </ul>
               </div>
-              <div class="form-footer-container">
-                  <p class="form-footer-description">Підпишіться на розсилку</p>
+              <div class="form__footer">
+                  <p class="form__description">Підпишіться на розсилку</p>
                   <form action="" class="footer-modal">
-                      <div class="footer-form">
+                      <div class="footer__form">
                           <label for="mail"></label>
-                              <input type="email" name="email" id="footer-email" required placeholder="E-mail">
+                              <input type="email" required name="email" id="footer-email" placeholder="E-mail">
                               <button class="subscribe" type="submit">Підписатися
-                                  <svg class="send-icon">
+                                  <svg class="subscribe__icon">
                                       <use href="./img/symbol-defs.svg#icon-send"></use>
                                   </svg>
                               </button>
