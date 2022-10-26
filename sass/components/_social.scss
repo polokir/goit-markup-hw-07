@@ -1,0 +1,33 @@
+.social{
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 16px;
+    }
+    &__item{
+       
+    }
+    &__link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #AFB1B8;
+        background-color: $secondFontColor;
+        transition: color $transitionDuration $animationTimingFunction,
+        background-color $transitionDuration $animationTimingFunction;
+
+        &:hover,
+        &:focus{
+            background-color: $hoverColor; 
+            color:$secondFontColor;
+        }
+    }
+
+    &__icon{
+        fill:currentColor; 
+    }
+}

@@ -1,0 +1,39 @@
+.gonna{
+    padding-top: 0;
+
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__list{
+        display: flex;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__item{
+        position: relative;
+    }
+    
+    &__text{
+        text-transform: uppercase;
+        color: $secondFontColor;
+        font-weight: 700;
+        line-height: 1.14; 
+        display: flex;
+        position: absolute;
+        width: 370px;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        background-color: rgba(47, 48, 58, 0.8);
+        height: 70px; 
+    }
+}

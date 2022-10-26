@@ -1,0 +1,35 @@
+.contact {
+    text-decoration: none; 
+    display: flex;
+    margin-left: auto;
+
+    &__item:first-child{ 
+        text-decoration: none; 
+        margin-right: 30px;
+        
+    } 
+     
+    &__link{ 
+        font-family: 'Roboto', sans-serif; 
+        text-decoration: none; 
+        color: $contactColor;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+        transition: color $transitionDuration $animationTimingFunction;
+    
+    } 
+    &__icon{
+    margin-right: 10px;
+    fill: currentColor;
+    }
+    &__link:hover{
+        color: $hoverColor;
+    }
+    &__link:focus{
+        color: $hoverColor;
+    }
+}

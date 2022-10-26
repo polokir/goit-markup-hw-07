@@ -1,0 +1,45 @@
+.goods{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+
+    &__link{
+        display: block;
+        transition: box-shadow $transitionDuration $animationTimingFunction;
+        &:hover,
+        &:focus{
+             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &__item{
+        width: 370px;
+    }
+
+    &__box{
+        padding: 20px 24px;
+        border:1px solid #EEEE ;
+    }
+
+    &__title{ 
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 10px;
+        color: $mainColor;
+       
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 1.875;
+        color: $contactColor;
+    }
+    
+    &__picture{
+        width: 370px;
+    }
+}

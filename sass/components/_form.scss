@@ -1,0 +1,136 @@
+.field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    &__input{
+        padding: 11px 12px;
+        padding-left: 42px;
+        height: 40px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: $contactColor;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        outline: $hoverColor;
+        transition: border-color $transitionDuration $animationTimingFunction;
+        
+    }
+
+
+    &__input:hover,
+    &__input:focus{
+        border-color: $hoverColor;
+    }
+
+
+    &__input-coment{
+        padding: 12px 16px;
+        height: 120px;
+        cursor: pointer;
+        color: var(--contact-color);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: var(--hover-color);
+        transition: border-color $transitionDuration $animationTimingFunction;
+    }
+
+
+    &__input-coment:hover,
+    &__input-coment:focus{
+        border-color: $hoverColor;
+    }
+
+
+    &__label{
+    
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $contactColor;
+    
+    }
+
+    &__icon{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        left:12px;
+        fill: $mainColor;
+        transition:fill $transitionDuration $animationTimingFunction;
+    }
+
+
+      &__input:hover + .field__icon,
+      &__input:focus + .field__icon{         
+        fill: $hoverColor;
+    }
+
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.check{
+    &__input {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    &__box {
+        position: relative;
+        width: 16px;
+        height:15px;
+        overflow: hidden;
+        border-radius: 1px;
+        background-color: inherit;
+        border: 2px solid $mainColor;
+        transition: background-color $transitionDuration $animationTimingFunction,
+        border-color $transitionDuration $animationTimingFunction;
+    
+    }
+
+    &__icon{
+        width: 13px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__input:checked + &__box {
+        background-color: $hoverColor;
+        border-color:$hoverColor;
+      }
+      
+      /* Focused */
+      
+      &__input:focus + &__box {
+        border-color: $hoverColor;
+      }
+      &__label{
+        margin-left: 8px;
+        cursor: pointer;
+        color: $contactColor;
+        line-height: 1.714;
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        color: $hoverColor;
+    }
+
+}
