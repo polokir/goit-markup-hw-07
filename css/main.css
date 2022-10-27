@@ -409,7 +409,7 @@ textarea {
 .about__box {
   width: 270px;
   height: 120px;
-  background-color: var(--team-color);
+  background-color: #F5F4FA;
   margin-bottom: 30px;
   display: flex;
   align-items: center;

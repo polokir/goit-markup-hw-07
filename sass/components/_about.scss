@@ -32,7 +32,7 @@
     &__box{
         width: 270px;
         height: 120px;
-        background-color: var(--team-color);
+        background-color: $teamColor;
         margin-bottom: 30px;
         display: flex;
         align-items: center;
