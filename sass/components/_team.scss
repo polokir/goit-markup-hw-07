@@ -41,9 +41,8 @@
 
     &__position{
         text-align: center;
-        color: var(--contact-color);
+        color: $contactColor;
         font-size: 16px;
         line-height: 1.18;
-        color: var(--contact-color);
     }
 }
